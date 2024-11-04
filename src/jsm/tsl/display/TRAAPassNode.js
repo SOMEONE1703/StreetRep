@@ -1,4 +1,4 @@
-import { Color, Vector2, PostProcessingUtils, NearestFilter, Matrix4 } from 'three';
+import { Color, Vector2, PostProcessingUtils, NearestFilter, Matrix4 } from '../../three.module.min.js';
 import { add, float, If, Loop, int, Fn, min, max, clamp, nodeObject, PassNode, QuadMesh, texture, NodeMaterial, uniform, uv, vec2, vec4, luminance } from 'three/tsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();

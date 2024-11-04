@@ -1,4 +1,4 @@
-import { Vector2 } from 'three';
+import { Vector2 } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, uv, uniform, vec2, vec3, sin, cos, add, vec4, screenSize } from 'three/tsl';
 
 class DotScreenNode extends TempNode {

@@ -8,7 +8,7 @@ import {
 	Scene,
 	ShaderMaterial,
 	UniformsUtils
-} from 'three';
+} from '../../three.module.min.js';
 import { UnpackDepthRGBAShader } from '../shaders/UnpackDepthRGBAShader.js';
 
 /**

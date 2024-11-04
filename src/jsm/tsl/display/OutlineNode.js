@@ -1,4 +1,4 @@
-import { Color, DepthTexture, FloatType, RenderTarget, Vector2, PostProcessingUtils } from 'three';
+import { Color, DepthTexture, FloatType, RenderTarget, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { Loop, int, exp, min, float, mul, uv, vec2, vec3, Fn, textureSize, orthographicDepthToViewZ, QuadMesh, screenUV, TempNode, nodeObject, NodeUpdateType, uniform, vec4, NodeMaterial, passTexture, texture, perspectiveDepthToViewZ, positionView } from 'three/tsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();

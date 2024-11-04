@@ -14,7 +14,7 @@ import {
 	UnsignedShortType,
 	WebGLRenderTarget,
 	HalfFloatType,
-} from 'three';
+} from '../../three.module.min.js';
 import { Pass, FullScreenQuad } from './Pass.js';
 import { SSRShader } from '../shaders/SSRShader.js';
 import { SSRBlurShader } from '../shaders/SSRShader.js';

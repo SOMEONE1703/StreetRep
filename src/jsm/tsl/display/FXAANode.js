@@ -1,4 +1,4 @@
-import { Vector2 } from 'three';
+import { Vector2 } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, uniformArray, select, float, NodeUpdateType, uv, dot, clamp, uniform, convertToTexture, smoothstep, bool, vec2, vec3, If, Loop, max, min, Break, abs } from 'three/tsl';
 
 class FXAANode extends TempNode {

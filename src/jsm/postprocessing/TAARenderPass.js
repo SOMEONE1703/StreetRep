@@ -1,7 +1,7 @@
 import {
 	HalfFloatType,
 	WebGLRenderTarget
-} from 'three';
+} from '../../three.module.min.js';
 import { SSAARenderPass } from './SSAARenderPass.js';
 
 /**

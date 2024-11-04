@@ -1,4 +1,4 @@
-import { StereoCamera, Vector2, PostProcessingUtils } from 'three';
+import { StereoCamera, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { PassNode, nodeObject } from 'three/tsl';
 
 const _size = /*@__PURE__*/ new Vector2();

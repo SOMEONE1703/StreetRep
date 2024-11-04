@@ -1,4 +1,4 @@
-import { Matrix3 } from 'three';
+import { Matrix3 } from '../../three.module.min.js';
 import { clamp, nodeObject, Fn, vec4, uv, uniform, max, NodeMaterial } from 'three/tsl';
 import StereoCompositePassNode from './StereoCompositePassNode.js';
 

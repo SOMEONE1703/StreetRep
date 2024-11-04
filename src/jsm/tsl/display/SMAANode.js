@@ -1,4 +1,4 @@
-import { HalfFloatType, LinearFilter, NearestFilter, RenderTarget, Texture, Vector2, PostProcessingUtils } from 'three';
+import { HalfFloatType, LinearFilter, NearestFilter, RenderTarget, Texture, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { abs, QuadMesh, NodeMaterial, TempNode, nodeObject, Fn, NodeUpdateType, uv, uniform, convertToTexture, varyingProperty, vec2, vec4, modelViewProjection, passTexture, max, step, dot, float, texture, If, Loop, int, Break, sqrt, sign, mix } from 'three/tsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();

@@ -1,4 +1,4 @@
-import { AdditiveBlending, Color, Vector2, PostProcessingUtils } from 'three';
+import { AdditiveBlending, Color, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { nodeObject, uniform, mrt, PassNode, QuadMesh, texture, NodeMaterial, getTextureIndex } from 'three/tsl';
 
 const _size = /*@__PURE__*/ new Vector2();

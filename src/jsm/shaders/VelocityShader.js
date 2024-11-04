@@ -2,7 +2,7 @@ import {
 	UniformsLib,
 	UniformsUtils,
 	Matrix4
-} from 'three';
+} from '../../three.module.min.js';
 
 /**
  * Mesh Velocity Shader @bhouston

@@ -1,4 +1,4 @@
-import { Vector2 } from 'three';
+import { Vector2 } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, NodeUpdateType, uv, uniform, convertToTexture, vec2, vec3, vec4, mat3, luminance, add } from 'three/tsl';
 
 class SobelOperatorNode extends TempNode {

@@ -1,4 +1,4 @@
-import { HalfFloatType, RenderTarget, Vector2, Vector3, PostProcessingUtils } from 'three';
+import { HalfFloatType, RenderTarget, Vector2, Vector3, PostProcessingUtils } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, float, NodeUpdateType, uv, passTexture, uniform, QuadMesh, NodeMaterial, Loop, texture, luminance, smoothstep, mix, vec4, uniformArray, add, int } from 'three/tsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();

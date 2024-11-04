@@ -1,4 +1,4 @@
-import { RenderTarget, Vector2, PostProcessingUtils } from 'three';
+import { RenderTarget, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, float, vec4, NodeUpdateType, uv, texture, passTexture, uniform, sign, max, convertToTexture, QuadMesh, NodeMaterial } from 'three/tsl';
 
 const _size = /*@__PURE__*/ new Vector2();

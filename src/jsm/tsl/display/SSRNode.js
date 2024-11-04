@@ -1,4 +1,4 @@
-import { NearestFilter, RenderTarget, Vector2, PostProcessingUtils } from 'three';
+import { NearestFilter, RenderTarget, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { getScreenPosition, getViewPosition, sqrt, mul, div, cross, float, Continue, Break, Loop, int, max, abs, sub, If, dot, reflect, normalize, screenCoordinate, QuadMesh, TempNode, nodeObject, Fn, NodeUpdateType, passTexture, NodeMaterial, uv, uniform, perspectiveDepthToViewZ, orthographicDepthToViewZ, vec2, vec3, vec4 } from 'three/tsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();

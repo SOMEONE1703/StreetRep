@@ -1,4 +1,4 @@
-import { DoubleSide, Mesh, MeshBasicMaterial, PlaneGeometry, Texture } from 'three';
+import { DoubleSide, Mesh, MeshBasicMaterial, PlaneGeometry, Texture } from '../../three.module.min.js';
 
 function createText( message, height ) {
 

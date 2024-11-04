@@ -1,4 +1,4 @@
-import { NearestFilter, Vector4 } from 'three';
+import { NearestFilter, Vector4 } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, float, NodeUpdateType, uv, uniform, convertToTexture, vec2, vec3, clamp, floor, dot, smoothstep, If, sign, step, mrt, output, normalView, PassNode, property } from 'three/tsl';
 
 class PixelationNode extends TempNode {

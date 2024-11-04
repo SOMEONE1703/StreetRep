@@ -1,4 +1,4 @@
-import { RenderTarget, Vector2, PostProcessingUtils } from 'three';
+import { RenderTarget, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, float, NodeUpdateType, uv, passTexture, uniform, convertToTexture, QuadMesh, NodeMaterial, vec2, vec3, Loop, threshold } from 'three/tsl';
 
 const _quadMesh = /*@__PURE__*/ new QuadMesh();

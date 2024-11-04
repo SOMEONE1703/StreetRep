@@ -1,4 +1,4 @@
-import { RenderTarget, Vector2, PostProcessingUtils } from 'three';
+import { RenderTarget, Vector2, PostProcessingUtils } from '../../three.module.min.js';
 import { TempNode, nodeObject, Fn, If, float, NodeUpdateType, uv, uniform, convertToTexture, vec2, vec4, QuadMesh, passTexture, mul, NodeMaterial } from 'three/tsl';
 
 // WebGPU: The use of a single QuadMesh for both gaussian blur passes results in a single RenderObject with a SampledTexture binding that
