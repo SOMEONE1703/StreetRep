@@ -1,5 +1,5 @@
 //import * as THREE from "three";
-import * as THREE from "../src/showroom/three.module.min.js";
+import * as THREE from "./three.module.min.js";
 //import * as CANNON from "cannon-es";
 //import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import * as CANNON from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es/dist/cannon-es.js';

@@ -1,4 +1,4 @@
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "../OrbitControls.js";
 
 export function createControls(camera, canvas) {
   const controls = new OrbitControls(camera, canvas);

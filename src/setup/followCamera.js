@@ -1,6 +1,6 @@
 // followCamera.js
 //import * as THREE from "three";
-import * as THREE from "../showroom/three.module.min.js";
+import * as THREE from "../three.module.min.js";
 export class FollowCamera {
   constructor(camera, offset = new THREE.Vector3(0, 2, -6)) {
     this.offsets=[

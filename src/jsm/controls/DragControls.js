@@ -7,7 +7,7 @@ import {
 	Vector3,
 	MOUSE,
 	TOUCH
-} from 'three';
+} from '../../three.module.min.js';
 
 const _plane = new Plane();
 

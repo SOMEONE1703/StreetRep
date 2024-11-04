@@ -1,4 +1,4 @@
-import { MOUSE, TOUCH } from 'three';
+import { MOUSE, TOUCH } from '../../three.module.min.js';
 
 import { OrbitControls } from './OrbitControls.js';
 

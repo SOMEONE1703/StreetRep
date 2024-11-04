@@ -2,7 +2,7 @@ import {
 	Controls,
 	Quaternion,
 	Vector3
-} from 'three';
+} from '../../three.module.min.js';
 
 const _changeEvent = { type: 'change' };
 
