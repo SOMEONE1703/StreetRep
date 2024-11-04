@@ -1,5 +1,5 @@
 import "./style.css";
-import * as THREE from "three";
+import * as THREE from "./three.module.min.js";
 import { sizes, handleResize } from "./setup/sizes.js";
 import { createRenderer } from "./setup/renderer.js";
 import { createControls } from "./setup/cameraControls.js";

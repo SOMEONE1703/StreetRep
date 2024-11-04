@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "../three.module.min.js";
 
 export class MiniMap {
   constructor(miniMapElement, scene, mainCamera) {

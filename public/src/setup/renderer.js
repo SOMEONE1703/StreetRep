@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "../three.module.min.js";
 
 export function createRenderer(canvas, sizes) {
   const renderer = new THREE.WebGLRenderer({ canvas });

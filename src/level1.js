@@ -1,5 +1,6 @@
 //import "./style.css";
 //import * as THREE from "three";
+import * as THREE from "./three.module.min.js";
 import { sizes, handleResize } from "./setup/sizes.js";
 console.log("uhm");
 import { createRenderer } from "./setup/renderer.js";
