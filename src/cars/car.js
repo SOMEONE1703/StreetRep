@@ -1,6 +1,6 @@
 //import * as CANNON from "cannon-es";
 import * as CANNON from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es/dist/cannon-es.js';
-import { matchStarted } from "../gameScreenUI/timer";
+import { matchStarted, startMatch } from "../gameScreenUI/timer";
 import { GLTFLoader } from "./GLTFLoader";
 import { DRACOLoader } from "./DRACOLoader.js";
 //import details from "../showroom/details.json";
@@ -213,6 +213,14 @@ export default class Car {
           );
         this.scene.add(this.wheels[i]);
       });
+      if (i==3){
+        setTimeout(()=>{
+          // Start main race timer after countdown completes
+          startMatch();
+        },5000);
+          
+        
+      }
     }
   }
 
