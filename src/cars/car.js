@@ -439,7 +439,7 @@ export default class Car {
     };
 
     const hindMovement = () => {
-      if (keysPressed.includes("r") || keysPressed.includes("r")) resetCar();
+      //if (keysPressed.includes("r") || keysPressed.includes("r")) resetCar();
 
       if (!keysPressed.includes(" ") && !keysPressed.includes(" ")) {
         pauseBrakeSound();
@@ -447,8 +447,8 @@ export default class Car {
         this.car.setBrake(0, 1);
         this.car.setBrake(0, 2);
         this.car.setBrake(0, 3);
-        console.log(keysPressed);
-        console.log(matchStarted);
+        //console.log(keysPressed);
+        //console.log(matchStarted);
         if (matchStarted) {
           if (keysPressed.includes("arrowleft")) {
             console.log("left");
