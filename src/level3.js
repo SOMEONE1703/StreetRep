@@ -10,7 +10,7 @@ import { setupFloor } from "./buildWorld.js";
 // import stats from "./setup/stats.js";
 import Car from "./cars/car.js";
 import { FollowCamera } from "./setup/followCamera.js";
-import * as CANNON from "cannon-es";
+import * as CANNON from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es/dist/cannon-es.js';
 import { drawSpeedo } from "./gameScreenUI/speedometer.js";
 import {
   startCountdown,
