@@ -7,7 +7,7 @@
     <style>
 @font-face {
         font-family: "Most Wasted";
-        src: url("/public/fonts/most-wasted/Mostwasted.ttf") format("truetype");
+        src: url("../fonts/most-wasted/Mostwasted.ttf") format("truetype");
       }
 
       body {
@@ -142,7 +142,7 @@
   <body>
     <p class="absolute">Street Credits: <span>20,000</span> </p>
     <audio autoplay loop>
-      <source src="/public/themesongs/nakamura.mp3" type="audio/mpeg" />
+      <source src="../themesongs/nakamura.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
@@ -205,12 +205,12 @@
     <script>
       //when race pressed, redirect to
       document.querySelector('.start-race').addEventListener('click', function() {
-        window.location.href = '../level1.html';
+        window.location.href = '../../level1.html';
       });
 
       //when room pressed
       document.querySelector('.room').addEventListener('click', function() {
-        window.location.href = '../showroom.html';
+        window.location.href = '../../showroom.html';
       });
     </script>
   </body>

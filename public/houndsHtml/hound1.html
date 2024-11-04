@@ -7,7 +7,7 @@
     <style>
 @font-face {
         font-family: "Most Wasted";
-        src: url("./public/fonts/most-wasted/Mostwasted.ttf") format("truetype");
+        src: url("../fonts/most-wasted/Mostwasted.ttf") format("truetype");
       }
 
       body {
@@ -16,7 +16,7 @@
         display: flex;
         height: 100vh;
         overflow: hidden;
-        background-image: url("../public/hounds/baba.jpeg");
+        background-image: url("../hounds/baba.jpeg");
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -141,7 +141,7 @@
   <body>
     <p class="absolute">Street Credits: <span>130,000</span> </p>
     <audio autoplay loop>
-      <source src="/public/themesongs/beast.mp3" type="audio/mpeg" />
+      <source src="../themesongs/beast.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
 
@@ -196,12 +196,12 @@
     <script>
       //when race pressed, redirect to
       document.querySelector('.start-race').addEventListener('click', function() {
-        window.location.href = '../level4.html';
+        window.location.href = '../../level4.html';
       });
 
       //when room pressed
       document.querySelector('.room').addEventListener('click', function() {
-        window.location.href = '../showroom.html';
+        window.location.href = '../../showroom.html';
       });
     </script>
   </body>
