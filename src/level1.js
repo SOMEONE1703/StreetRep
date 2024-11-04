@@ -1,6 +1,7 @@
-import "./style.css";
+//import "./style.css";
 //import * as THREE from "three";
 import { sizes, handleResize } from "./setup/sizes.js";
+console.log("uhm");
 import { createRenderer } from "./setup/renderer.js";
 import { createControls } from "./setup/cameraControls.js";
 import { setupLights } from "./setup/lights.js";
@@ -9,7 +10,7 @@ import { initPhysics } from "./setup/physics.js";
 import { setupFloor, createBox, createGoalBox } from "./buildWorld.js";
 //import stats from "./setup/stats.js";
 import Car from "./cars/car.js";
-import Car2 from "./cars/car2.js";
+//import Car2 from "./cars/car2.js";
 import { FollowCamera } from "./setup/followCamera.js"; // Import FollowCamera
 //import * as CANNON from "cannon-es";
 import { drawSpeedo } from "./gameScreenUI/speedometer.js";

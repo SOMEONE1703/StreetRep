@@ -1,5 +1,5 @@
-import * as THREE from "three";
-
+//import * as THREE from "three";
+import * as THREE from "../showroom/three.module.min.js";
 export function loadCubeTextures() {
   const cubeTextureLoader = new THREE.CubeTextureLoader();
   return cubeTextureLoader.load([

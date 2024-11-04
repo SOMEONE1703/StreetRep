@@ -1,6 +1,7 @@
-import * as CANNON from "cannon-es";
-import cannonDebugger from "cannon-es-debugger";
-
+//import * as CANNON from "cannon-es";
+//import cannonDebugger from "cannon-es-debugger";
+import * as CANNON from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es/dist/cannon-es.js';
+import cannonDebugger from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es-debugger@latest/dist/cannon-es-debugger.js';
 export function initPhysics(scene) {
   const world = new CANNON.World({ gravity: new CANNON.Vec3(0, -9.82, 0) });
   world.broadphase = new CANNON.SAPBroadphase(world);

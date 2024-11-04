@@ -1,5 +1,5 @@
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-
+//import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from '../showroom/OrbitControls.js';
 export function createControls(camera, canvas) {
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true;

@@ -1,5 +1,5 @@
 import "./style.css";
-import * as THREE from "three";
+import * as THREE from "./three.module.min.js";
 import { sizes, handleResize } from "./setup/sizes.js";
 import { createRenderer } from "./setup/renderer.js";
 import { createControls } from "./setup/cameraControls.js";
@@ -14,7 +14,7 @@ import { FollowCamera } from "./setup/followCamera.js"; // Import FollowCamera
 import * as CANNON from "cannon-es";
 import { drawSpeedo } from "./gameScreenUI/speedometer.js";
 import { startCountdown, startMatch } from "./gameScreenUI/timer.js";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "./GLTFLoader.js";
 import { MiniMap } from "./setup/miniMap.js";
 
 console.log("what");

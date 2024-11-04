@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from "../three.module.min.js";
 
 export function setupLights(scene) {
   // Create a directional light with white color and specified intensity

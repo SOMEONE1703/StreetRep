@@ -1,11 +1,66 @@
-import * as THREE from "three";
-import * as CANNON from "cannon-es";
+//import * as CANNON from "cannon-es";
+import * as CANNON from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es/dist/cannon-es.js';
 import { matchStarted } from "../gameScreenUI/timer";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
-import details from "../showroom/details.json";
+import { GLTFLoader } from "./GLTFLoader";
+import { DRACOLoader } from "./DRACOLoader.js";
+//import details from "../showroom/details.json";
 import { preloadAudio, playAudio, pauseAudio } from "../setup/audioLoader";
 
+
+var details=[
+  {
+      "name":"Ford Mustang Shelby GT500",
+      "logo":"./public/cars/ford_mustang_shelby_gt500/shelby.png",
+      "show_scale":[0.7,0.7,0.7],
+      "game_scale":[0.865,0.865,0.865],
+      "chassis_displacement":[0,0.22,0],
+      "wheel_scale":1.35,
+      "chassis_path":"./public/cars/ford_mustang_shelby_gt500/chassis.gltf",
+      "wheel_path":"./public/cars/ford_mustang_shelby_gt500/wheel.gltf",
+      "wheel_orientation":[1,-1,1,-1],
+      "game_wheels":[[-0.71,0.07,-1.07],[0.71,0.07,-1.07],[-0.71,0.07,1.26],[0.71,0.07,1.27]],
+      "wheel_positions":[[-0.6,0.18,1.04],[0.6,0.18,1.04],[-0.58,0.18,-0.86],[0.58,0.18,-0.86]]
+  },
+  {
+      "name":"Porsche 911 GT3",
+      "logo":"./public/cars/porsche_911_gt3/porsche.png",
+      "show_scale":[0.55,0.55,0.55],
+      "game_scale":[0.78,0.78,0.78],
+      "chassis_displacement":[0,0.18,0],
+      "wheel_scale":1.2,
+      "chassis_path":"./public/cars/porsche_911_gt3/chassis.gltf",
+      "wheel_path":"./public/cars/porsche_911_gt3/wheel.gltf",
+      "wheel_orientation":[1,-1,1,-1],
+      "game_wheels":[[-0.65,0.15,-1.17],[0.65,0.15,-1.17],[-0.65,0.15,1.12],[0.65,0.15,1.12]],
+      "wheel_positions":[[-0.48,0.22,0.79],[0.48,0.22,0.79],[-0.48,0.22,-0.83],[0.48,0.22,-0.83]]
+  },
+  {
+      "name":"BMW M6 Gran Coupe",
+      "logo":"./public/cars/bmw_m6_gran_coupe/bmw.png",
+      "show_scale":[0.7,0.7,0.7],
+      "game_scale":[0.865,0.865,0.865],
+      "chassis_displacement":[0,0.125,0.5],
+      "wheel_scale":-1.35,
+      "chassis_path":"./public/cars/bmw_m6_gran_coupe/chassis.gltf",
+      "wheel_path":"./public/cars/bmw_m6_gran_coupe/wheel.gltf",
+      "wheel_orientation":[-1,1,-1,1],
+      "game_wheels":[[-0.68,0.2,-1.45],[0.68,0.2,-1.45],[-0.68,0.2,1.2],[0.68,0.2,1.2]],
+      "wheel_positions":[[-0.56,0.27,0.98],[0.56,0.27,0.98],[-0.56,0.27,-1.19],[0.56,0.27,-1.19]]
+  },
+  {
+      "name":"McLaren P1",
+      "logo":"./public/cars/mclaren_p1/mclaren.png",
+      "show_scale":[0.55,0.55,0.55],
+      "game_scale":[0.78,0.78,0.78],
+      "chassis_displacement":[0,0.18,0],
+      "wheel_scale":-1.2,
+      "chassis_path":"./public/cars/mclaren_p1/chassis.gltf",
+      "wheel_path":"./public/cars/mclaren_p1/wheel.gltf",
+      "wheel_orientation":[-1,1,-1,1],
+      "game_wheels":[[-0.65,0.15,-1.04],[0.65,0.15,-1.04],[-0.65,0.15,1.45],[0.65,0.15,1.45]],
+      "wheel_positions":[[-0.52,0.22,1.03],[0.515,0.22,1.03],[-0.52,0.22,-0.76],[0.515,0.22,-0.76]]
+  }
+]
 //console.log(details);
 var index = 0;
 let s = localStorage.getItem("StreetCredCar");

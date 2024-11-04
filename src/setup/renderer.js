@@ -1,5 +1,5 @@
-import * as THREE from "three";
-
+//import * as THREE from "three";
+import * as THREE from "../showroom/three.module.min.js";
 export function createRenderer(canvas, sizes) {
   const renderer = new THREE.WebGLRenderer({ canvas });
   renderer.setSize(sizes.width, sizes.height);

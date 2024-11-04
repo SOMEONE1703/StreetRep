@@ -1,8 +1,9 @@
-import * as THREE from "three";
-import * as CANNON from "cannon-es";
+//import * as THREE from "three";
+//import * as CANNON from "cannon-es";
+import * as CANNON from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es/dist/cannon-es.js';
 import { matchStarted } from "../gameScreenUI/timer";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
+import { GLTFLoader } from "./GLTFLoader";
+import { DRACOLoader } from "./DRACOLoader.js";
 import details from "../showroom/details.json";
 import { preloadAudio, playAudio, pauseAudio } from "../setup/audioLoader";
 

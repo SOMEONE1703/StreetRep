@@ -1,5 +1,5 @@
-import * as THREE from "three";
-
+//import * as THREE from "three";
+import * as THREE from "../showroom/three.module.min.js";
 export class MiniMap {
   constructor(miniMapElement, scene, mainCamera) {
     this.miniMapElement = miniMapElement;
