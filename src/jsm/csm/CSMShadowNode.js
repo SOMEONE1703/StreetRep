@@ -6,7 +6,7 @@ import {
 	Box3,
 	Object3D,
 	WebGLCoordinateSystem
-} from 'three';
+} from '../../three.module.min.js';
 
 import { CSMFrustum } from './CSMFrustum.js';
 import { viewZToOrthographicDepth, reference, uniform, float, vec4, vec2, If, Fn, min, renderGroup, positionView, Node, NodeUpdateType, shadow } from 'three/tsl';

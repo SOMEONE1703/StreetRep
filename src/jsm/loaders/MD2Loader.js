@@ -5,8 +5,7 @@ import {
 	Float32BufferAttribute,
 	Loader,
 	Vector3
-} from 'three';
-
+} from '../../three.module.min.js';
 const _normalData = [
 	[ - 0.525731, 0.000000, 0.850651 ], [ - 0.442863, 0.238856, 0.864188 ],
 	[ - 0.295242, 0.000000, 0.955423 ], [ - 0.309017, 0.500000, 0.809017 ],

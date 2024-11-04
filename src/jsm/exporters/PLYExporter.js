@@ -4,7 +4,7 @@ import {
 	Color,
 	ColorManagement,
 	SRGBColorSpace
-} from 'three';
+} from '../../three.module.min.js';
 
 /**
  * https://github.com/gkjohnson/ply-exporter-js

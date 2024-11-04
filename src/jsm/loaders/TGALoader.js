@@ -1,8 +1,7 @@
 import {
 	DataTextureLoader,
 	LinearMipmapLinearFilter
-} from 'three';
-
+} from '../../three.module.min.js';
 class TGALoader extends DataTextureLoader {
 
 	constructor( manager ) {

@@ -6,7 +6,7 @@ import {
 	PlaneGeometry,
 	ShaderMaterial,
 	Vector3,
-} from 'three';
+} from '../../three.module.min.js';
 import { mergeGeometries } from '../utils/BufferGeometryUtils.js';
 
 class TextureHelper extends Mesh {

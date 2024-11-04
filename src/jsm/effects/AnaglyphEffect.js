@@ -6,7 +6,7 @@ import {
 	ShaderMaterial,
 	StereoCamera,
 	WebGLRenderTarget
-} from 'three';
+} from '../../three.module.min.js';
 import { FullScreenQuad } from '../postprocessing/Pass.js';
 
 class AnaglyphEffect {

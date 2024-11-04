@@ -1,4 +1,4 @@
-import { Color, ColorManagement, SRGBColorSpace } from 'three';
+import { Color, ColorManagement, SRGBColorSpace } from '../../three.module.min.js';
 
 /**
  * Export draco compressed files from threejs geometry objects.

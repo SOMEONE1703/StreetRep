@@ -6,7 +6,7 @@ import {
 	Float32BufferAttribute,
 	Loader,
 	SRGBColorSpace
-} from 'three';
+} from '../../three.module.min.js';
 import * as fflate from '../libs/fflate.module.js';
 
 class VTKLoader extends Loader {

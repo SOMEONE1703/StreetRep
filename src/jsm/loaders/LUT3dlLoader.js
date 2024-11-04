@@ -10,7 +10,7 @@ import {
 	Loader,
 	RGBAFormat,
 	UnsignedByteType,
-} from 'three';
+} from '../../three.module.min.js';
 
 export class LUT3dlLoader extends Loader {
 

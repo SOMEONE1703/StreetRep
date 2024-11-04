@@ -2,7 +2,7 @@ import {
 	Mesh,
 	NodeMaterial,
 	SphereGeometry
-} from 'three';
+} from '../../three.module.min.js';
 import { float, Fn, getShIrradianceAt, normalWorld, uniformArray, uniform, vec4 } from 'three/tsl';
 
 class LightProbeHelper extends Mesh {

@@ -8,7 +8,7 @@ import {
 	LinearSRGBColorSpace,
 	RedFormat,
 	RGBAFormat
-} from 'three';
+} from '../../three.module.min.js';
 import * as fflate from '../libs/fflate.module.js';
 
 /**

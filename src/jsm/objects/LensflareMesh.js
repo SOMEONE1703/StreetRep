@@ -12,7 +12,7 @@ import {
 	UnsignedByteType,
 	Vector2,
 	Vector3,
-	Vector4 } from 'three';
+	Vector4 } from '../../three.module.min.js';
 
 import { texture, textureLoad, uv, ivec2, vec2, vec4, positionGeometry, reference, varyingProperty, materialReference, Fn, Node } from 'three/tsl';
 

@@ -9,7 +9,7 @@ import {
 	HalfFloatType,
 	DataUtils,
 	WebGLCoordinateSystem
-} from 'three';
+} from '../../three.module.min.js';
 
 class LightProbeGenerator {
 

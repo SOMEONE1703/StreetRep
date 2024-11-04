@@ -4,7 +4,7 @@ import {
 	Mesh,
 	PlaneGeometry,
 	Vector3,
-} from 'three';
+} from '../../three.module.min.js';
 import { NodeMaterial, texture as textureNode, cubeTexture, texture3D, float, vec4 } from 'three/tsl';
 import { mergeGeometries } from '../utils/BufferGeometryUtils.js';
 

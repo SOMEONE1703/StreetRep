@@ -14,7 +14,7 @@ import {
 	SRGBTransfer,
 	DataTexture,
 	REVISION,
-} from 'three';
+} from '../../three.module.min.js';
 
 import {
 	write,

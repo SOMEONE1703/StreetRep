@@ -3,7 +3,7 @@ import {
 	BoxGeometry,
 	Mesh,
 	Vector3
-} from 'three';
+} from '../../three.module.min.js';
 import { Fn, NodeMaterial, float, vec3, acos, add, mul, clamp, cos, dot, exp, max, mix, modelViewProjection, normalize, positionWorld, pow, smoothstep, sub, varying, varyingProperty, vec4, uniform, cameraPosition } from 'three/tsl';
 
 /**

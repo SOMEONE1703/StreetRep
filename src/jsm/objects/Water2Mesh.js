@@ -3,7 +3,7 @@ import {
 	Mesh,
 	Vector2,
 	Vector3
-} from 'three';
+} from '../../three.module.min.js';
 import { Fn, NodeMaterial, NodeUpdateType, TempNode, vec2, viewportSafeUV, viewportSharedTexture, reflector, pow, float, abs, texture, uniform, vec4, cameraPosition, positionWorld, uv, mix, vec3, normalize, max, dot, screenUV } from 'three/tsl';
 
 /**

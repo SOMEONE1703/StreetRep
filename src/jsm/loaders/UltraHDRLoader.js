@@ -10,7 +10,7 @@ import {
 	Loader,
 	RGBAFormat,
 	UVMapping,
-} from 'three';
+} from '../../three.module.min.js';
 
 // UltraHDR Image Format - https://developer.android.com/media/platform/hdr-image-format
 // HDR/EXR to UltraHDR Converter - https://gainmap-creator.monogrid.com/

@@ -9,7 +9,7 @@ import {
 	Loader,
 	UnsignedByteType,
 	Vector3,
-} from 'three';
+} from '../../three.module.min.js';
 
 export class LUTCubeLoader extends Loader {
 

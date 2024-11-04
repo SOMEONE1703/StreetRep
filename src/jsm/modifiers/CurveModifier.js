@@ -14,8 +14,7 @@ import {
 	LinearFilter,
 	DynamicDrawUsage,
 	Matrix4
-} from 'three';
-
+} from '../../three.module.min.js';
 /**
  * Make a new DataTexture to store the descriptions of the curves.
  *

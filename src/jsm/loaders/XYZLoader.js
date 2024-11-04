@@ -5,7 +5,7 @@ import {
 	Float32BufferAttribute,
 	Loader,
 	SRGBColorSpace
-} from 'three';
+} from '../../three.module.min.js';
 
 class XYZLoader extends Loader {
 

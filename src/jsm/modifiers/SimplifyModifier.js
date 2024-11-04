@@ -5,7 +5,7 @@ import {
 	Vector2,
 	Vector3,
 	Vector4
-} from 'three';
+} from '../../three.module.min.js';
 import * as BufferGeometryUtils from '../utils/BufferGeometryUtils.js';
 
 /**

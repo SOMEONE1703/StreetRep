@@ -11,7 +11,7 @@ import {
 	Vector4,
 	WebGLRenderTarget,
 	HalfFloatType
-} from 'three';
+} from '../../three.module.min.js';
 
 class Refractor extends Mesh {
 

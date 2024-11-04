@@ -24,7 +24,7 @@ import {
 	Sprite,
 	SpriteMaterial,
 	TextureLoader
-} from 'three';
+} from '../../three.module.min.js';
 
 import { EXRLoader } from '../loaders/EXRLoader.js';
 

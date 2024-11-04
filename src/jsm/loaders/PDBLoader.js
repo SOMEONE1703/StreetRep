@@ -5,7 +5,7 @@ import {
 	Loader,
 	Color,
 	SRGBColorSpace
-} from 'three';
+} from '../../three.module.min.js';
 
 class PDBLoader extends Loader {
 
