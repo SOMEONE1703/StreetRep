@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js & Cannon.js Car Simulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r135/three.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+        margin: 0 auto;
+      }
+      #speedometer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 15%;
+        aspect-ratio: 1/1;
+        margin: 5%;
+        z-index: 1;
+      }
+
+      #countdown {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 5%;
+        width: 15%;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+      }
+
+      #miniMap {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        width: 150px;
+        height: 150px;
+        box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <link rel="stylesheet" href="src/timer.css" />
+  </head>
+  <body>
+    <!-- Canvas element for the Three.js scene -->
+    <canvas class="webgl"></canvas>
+
+    <canvas id="speedometer"></canvas>
+
+    <!-- HTML Element to display the countdown -->
+    <div id="countdown"></div>
+    <!-- <div id="countdown-overlay" class="overlay">5</div> -->
+    <div id="miniMap"></div>
+
+    <!-- Import the compiled JavaScript file -->
+    <!-- <script src="/src/speedometer.js"></script> -->
+    <script src="src/level2.js" type="module"></script>
+  </body>
+</html>

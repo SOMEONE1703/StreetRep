@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Screen</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .play-icon {
+        width: 100px; /* Adjust size as needed */
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body onclick="redirectToGame()">
+    <img
+      src="/public/svg/play.svg"
+      alt="Play Button"
+      class="play-icon"
+      onclick="redirectToGame()"
+    />
+
+    <script>
+      function redirectToGame() {
+        window.location.href = "dubula.html";
+      }
+    </script>
+  </body>
+</html>

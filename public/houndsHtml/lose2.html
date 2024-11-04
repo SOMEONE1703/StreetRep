@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets see</title>
+    <style>
+@font-face {
+        font-family: "Most Wasted";
+        src: url("/public/fonts/most-wasted/Mostwasted.ttf") format("truetype");
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url("/public/hounds/omo.jpeg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* Background styling */
+      .left,
+      .right {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+
+      /* Left Section */
+      .left {
+        flex-direction: column;
+        padding: 20px;
+        /*background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        justify-content: flex-start;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .headtitle {
+        font-family: "Most Wasted", sans-serif; /* Replace with the correct font */
+        font-size: 5em;
+        font-weight: bold;
+      }
+
+      .company {
+        
+        font-size: 1.5em;
+        margin-top: 5px;
+      }
+
+      .selection {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .select {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: #333;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        transition: transform 0.3s ease; /* Smooth transition for the transform */
+      }
+
+      .select:hover {
+    transform: scale(1.1); /* Scale the button to 110% */
+}
+
+      .select .img img {
+        margin-right: 10px;
+      }
+
+      /* Right Section */
+      .right {
+        padding: 20px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.7); /* Dark tint background */
+      }
+
+      .intro-text {
+        max-width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Left Section for Hound Info -->
+    <div class="left">
+      <div class="title">
+        <div class="headtitle">Angelica</div>
+        <div class="company">Hound #2</div>
+      </div>
+
+      
+      </div>
+    </div>
+
+    <!-- Right Section for Story -->
+    <div class="right">
+      <div class="intro-text" id="quote">
+        <p>
+         
+        </p>
+      </div>
+      <div class="selection">
+        <div class="room select">
+          <div class="img">
+            <img width="50" src="./maintenance.png" alt="Room Icon" />
+          </div>
+          <div class="text">Room</div>
+        </div>
+        <div class="start-race select" id="start-race">
+          <div class="img">
+            <img width="50" src="/public/svg/restart.svg" alt="Restart Icon" />
+          </div>
+          <div class="text">Restart</div>
+        </div>
+      </div>
+      <script>
+        // Array of quotes
+        const hound4quotes = [
+          "I'm so sorry, didn't mean for it to be that hard.",
+          "I don't think they'll allow me to change the challenge now.",
+          "You need to keep trying, for your brother.",
+          "Are you okay?",
+          "It'll all work out in the end, if it doesn't, then it's not the end yet.",
+        ];
+  
+        // Function to select a random quote
+        const randomQuote = hound4quotes[Math.floor(Math.random() * hound4quotes.length)];
+  
+        // Replace the paragraph content with the random quote
+        document.getElementById('quote').innerHTML = `<p>"${randomQuote}"</p>`;
+
+        //restart should redirect to index.html
+        document.getElementById('start-race').addEventListener('click', () => {
+          window.history.go(-1);
+        });
+
+         //when room pressed
+      document.querySelector('.room').addEventListener('click', function() {
+        window.location.href = '../showroom.html';
+      });
+      </script>
+  </body>
+</html>

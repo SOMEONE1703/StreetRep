@@ -1,0 +1,5 @@
+Speedometer designs:
+https://github.com/vjt/canvas-speedometer
+https://github.com/tameemi/tesla-speedometer
+https://github.com/vladyspavlov/html5-canvas-speedometer?tab=readme-ov-file
+https://github.com/Vetronuss/Speedometer?tab=readme-ov-file

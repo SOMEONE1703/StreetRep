@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets see</title>
+    <style>
+@font-face {
+        font-family: "Most Wasted";
+        src: url("../public/fonts/most-wasted/Mostwasted.ttf") format("truetype");
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url("../public/hounds/omo.jpeg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* Background styling */
+      .left,
+      .right {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+
+      /* Left Section */
+      .left {
+        flex-direction: column;
+        padding: 20px;
+        /*background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        justify-content: flex-start;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .headtitle {
+        font-family: "Most Wasted", sans-serif; /* Replace with the correct font */
+        font-size: 5em;
+        font-weight: bold;
+      }
+
+      .company {
+        
+        font-size: 1.5em;
+        margin-top: 5px;
+      }
+
+      .selection {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .select {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: #333;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        transition: transform 0.3s ease; /* Smooth transition for the transform */
+      }
+
+      .select:hover {
+    transform: scale(1.1); /* Scale the button to 110% */
+}
+
+      .select .img img {
+        margin-right: 10px;
+      }
+
+      /* Right Section */
+      .right {
+        padding: 20px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.7); /* Dark tint background */
+      }
+
+      .intro-text {
+        max-width: 90%;
+        padding: 20px;
+        /*background: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Dark background overlay for readability */
+        border-radius: 10px;
+        font-size: 1.5rem;
+      }
+
+      .race-details {
+        margin-top: 20px;
+        color: #ddd;
+      }
+
+      .table {
+        margin-top: 10px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+
+      /* Styling the button */
+      .audio {
+        display: none;
+      }
+      span{
+        color: green;
+      }
+      .absolute{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        z-index: 5;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="absolute">Street Credits: <span>80,300</span> </p>
+    <audio autoplay loop>
+      <source src="../public/themesongs/verify.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Left Section for Hound Info -->
+    <div class="left">
+      <div class="title">
+        <div class="headtitle">Angelica</div>
+        <div class="company">Hound #2</div>
+      </div>
+
+      
+      </div>
+    </div>
+
+    <!-- Right Section for Story -->
+    <div class="right">
+      <div class="intro-text">
+        <p>
+            Angelica has been a long time member of the Track Hounds. It was love at first sight when Bryan joined the gang, Bryan was everything you’d want from a street racer, he was the perfect object of the road. Angelica only goes for the best, she only dates the best of the best.   <div class="race-details">
+          <div class="table">
+            <div class="win row">
+              <div class="text race-win">Street Name</div>
+              <div class="values race">Lover Girl</div>
+            </div>
+            <div class="win row">
+              <div class="text milestone-completed">Aka</div>
+              <div class="values milestone">Second Hand</div>
+            </div>
+            <div class="win row">
+              <div class="text total-bounty">Street Cred</div>
+              <div class="values bounty-total">80,000</div>
+            </div>
+          </div>
+          <p>"Hit the check points in time and you'll be fine, good luck, young Bryan."</p>
+        </div>
+      </div>
+      <div class="selection">
+        <div class="room select">
+          <div class="img">
+            <img width="50" src="./maintenance.png" alt="Room Icon" />
+          </div>
+          <div class="text">Room</div>
+        </div>
+        <div class="start-race select">
+          <div class="img">
+            <img width="50" src="./racing-flag.png" alt="Race Icon" />
+          </div>
+          <div class="text">Race</div>
+        </div>
+    </div>
+    <script>
+      //when race pressed, redirect to
+      document.querySelector('.start-race').addEventListener('click', function() {
+        window.location.href = '../level5.html';
+      });
+
+      //when room pressed
+      //when room pressed
+      document.querySelector('.room').addEventListener('click', function() {
+        window.location.href = '../showroom.html';
+      });
+    </script>
+  </body>
+</html>

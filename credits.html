@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Credits</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+      }
+
+      .credits-container {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .credits {
+        position: absolute;
+        width: 100%;
+        transform: translateY(100vh);
+        animation: rollUp 60s linear infinite;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      @keyframes rollUp {
+        from {
+          transform: translateY(100vh);
+        }
+        to {
+          transform: translateY(-100%);
+        }
+      }
+
+      .cast {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 50px;
+      }
+
+      .left {
+        text-align: end;
+        flex: 1;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      .right {
+        text-align: start;
+        flex: 1;
+        margin: 0;
+      }
+
+      .para {
+        text-align: start;
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+
+      .nomargin {
+        margin: 0;
+      }
+
+      .continue-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="../public/themesongs/nakamura.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="credits-container">
+      <div class="credits">
+        <h3>Story By</h3>
+        <p><strong>Muthuphei Mukhunyeledzi</strong></p>
+
+        <h3>Cast</h3>
+        <div class="cast">
+          <p class="left">Ndou Mukhathutsheli</p>
+          <p class="right">Charles</p>
+        </div>
+        <div class="cast">
+          <p class="left">Massamba Maphalala</p>
+          <p class="right">Massamba</p>
+        </div>
+        <div class="cast">
+          <p class="left">Madima Bono</p>
+          <p class="right">Raya</p>
+        </div>
+        <div class="cast">
+          <p class="left">Omolemo Rampele</p>
+          <p class="right">Angelica</p>
+        </div>
+
+        <h3>Meet the team</h3>
+
+        <p class="nomargin">Massamba Maphalala</p>
+        <p class="nomargin">Siphelele Mthethwa</p>
+        <p class="nomargin">Muthuphei Mukhunyeledzi</p>
+        <p class="nomargin">Kananelo Rampele</p>
+        <p class="nomargin">Ndou Mukhathutsheli Charles</p>
+        <p class="nomargin">Mbedzi Ritanzwe</p>
+
+        <h3>Special thanks to</h3>
+        <p class="nomargin">Omolemo Rampele</p>
+        <p class="nomargin">Madima Bono</p>
+        <p class="nomargin">Rasikhinya Zwavhudi</p>
+        <p class="nomargin">Netshivhera Dzanga Precious</p>
+        <p class="nomargin">Ravele Tendani</p>
+
+        <div id="letter">
+          <p class="para">Mr Williams,</p>
+          <p class="para">
+            The hit on Austin Daniels was clean. The boss was very much
+            impressed with your work. <br />
+            We've got a new target for you. Another politician-Jacob Zuma.
+          </p>
+          <p class="para">
+            Remember, you stay dead. If you so much as try to contact anyone,
+            Dax won't live to see another day.
+          </p>
+          <p class="para">
+            Yours sincerely, <br />
+            The System
+          </p>
+          <h1>THANKS FOR PLAYING❤️</h1>
+          <a href="index1.html" class="continue-button">New Game+</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
