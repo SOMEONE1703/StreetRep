@@ -173,7 +173,7 @@ export function setupDryFloor(scene, world) {
 
   const textureLoader = new THREE.TextureLoader();
   const texture = textureLoader.load(
-    "/textures/dryfloor/mud_cracked_dry_riverbed_002_diff_4k.jpg"
+    "./textures/dryfloor/mud_cracked_dry_riverbed_002_diff_4k.jpg"
   );
   // Set the texture's repeat properties
   texture.wrapS = THREE.RepeatWrapping;

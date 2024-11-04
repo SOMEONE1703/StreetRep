@@ -1,4 +1,4 @@
-import "./style.css";
+//import "./style.css";
 import * as THREE from "./three.module.min.js";
 import { sizes, handleResize } from "./setup/sizes.js";
 import { createRenderer } from "./setup/renderer.js";

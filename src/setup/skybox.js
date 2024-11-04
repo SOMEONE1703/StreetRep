@@ -53,22 +53,22 @@ export function loadSkybox2(scene) {
   console.log("here");
   let materialArray = [];
   let texture_ft = new THREE.TextureLoader().load(
-    "/skyboxes/sky/divine_ft.jpg"
+    "./skyboxes/sky/divine_ft.jpg"
   );
   let texture_bk = new THREE.TextureLoader().load(
-    "/skyboxes/sky/divine_bk.jpg"
+    "./skyboxes/sky/divine_bk.jpg"
   );
   let texture_up = new THREE.TextureLoader().load(
-    "/skyboxes/sky/divine_up.jpg"
+    "./skyboxes/sky/divine_up.jpg"
   );
   let texture_dn = new THREE.TextureLoader().load(
-    "/skyboxes/sky/divine_dn.jpg"
+    "./skyboxes/sky/divine_dn.jpg"
   );
   let texture_rt = new THREE.TextureLoader().load(
-    "/skyboxes/sky/divine_rt.jpg"
+    "./skyboxes/sky/divine_rt.jpg"
   );
   let texture_lf = new THREE.TextureLoader().load(
-    "/skyboxes/sky/divine_lf.jpg"
+    "./skyboxes/sky/divine_lf.jpg"
   );
 
   materialArray.push(new THREE.MeshBasicMaterial({ map: texture_ft }));
@@ -89,22 +89,22 @@ export function loadWrathbox(scene) {
   console.log("here");
   let materialArray = [];
   let texture_ft = new THREE.TextureLoader().load(
-    "/skyboxes/wrath/wrath_ft.jpg"
+    "./skyboxes/wrath/wrath_ft.jpg"
   );
   let texture_bk = new THREE.TextureLoader().load(
-    "/skyboxes/wrath/wrath_bk.jpg"
+    "./skyboxes/wrath/wrath_bk.jpg"
   );
   let texture_up = new THREE.TextureLoader().load(
-    "/skyboxes/wrath/wrath_up.jpg"
+    "./skyboxes/wrath/wrath_up.jpg"
   );
   let texture_dn = new THREE.TextureLoader().load(
-    "/skyboxes/wrath/wrath_dn.jpg"
+    "./skyboxes/wrath/wrath_dn.jpg"
   );
   let texture_rt = new THREE.TextureLoader().load(
-    "/skyboxes/wrath/wrath_rt.jpg"
+    "./skyboxes/wrath/wrath_rt.jpg"
   );
   let texture_lf = new THREE.TextureLoader().load(
-    "/skyboxes/wrath/wrath_lf.jpg"
+    "./skyboxes/wrath/wrath_lf.jpg"
   );
 
   materialArray.push(new THREE.MeshBasicMaterial({ map: texture_ft }));

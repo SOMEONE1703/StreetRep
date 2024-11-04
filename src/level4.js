@@ -19,7 +19,7 @@ import { FollowCamera } from "./setup/followCamera.js"; // Import FollowCamera
 //import * as CANNON from "cannon-es";
 import { drawSpeedo } from "./gameScreenUI/speedometer.js";
 import { startCountdown, startMatch } from "./gameScreenUI/timer.js";
-import { GLTFLoader } from "./jsm/Addons.js";
+import { GLTFLoader } from "./GLTFLoader.js";
 import { MiniMap } from "./setup/miniMap.js";
 
 // Canvas and Scene
