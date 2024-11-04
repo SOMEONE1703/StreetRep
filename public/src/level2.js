@@ -231,7 +231,7 @@ function setupCollisionDetection(
         if (event.body === obstacle.body) {
           hasCollided = true;
           console.log("Collision detected with obstacle! Game Over.");
-          window.location.href = "../houndsHtml/lose3.html";
+          window.location.href = "./public/houndsHtml/lose3.html";
         }
       });
   });
@@ -340,7 +340,7 @@ function checkGoal(carPosition, goalBox) {
     z < goalBox.position.z + halfZ
   ) {
     console.log("Goal reached! Race is over.");
-    window.location.href = "../houndsHtml/letter3.html";
+    window.location.href = "./public/houndsHtml/letter3.html";
   }
 }
 

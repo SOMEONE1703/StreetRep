@@ -30,7 +30,7 @@ export function startCountdown(seconds, displayElement, num = 5) {
     } else {
       //list of lose
       let list = ["lose1", "lose2", "lose3", "lose4", "lose5"];
-      window.location.href = `../houndsHtml/${list[num - 1]}.html`;
+      window.location.href = `./public/houndsHtml/${list[num - 1]}.html`;
       setTimeout(() => (displayElement.textContent = ""), 1000);
     }
   }
@@ -70,8 +70,12 @@ export async function preRaceCountdown(duration, onComplete) {
       //controls.enabled = true; // Enable controls
 
       // Trigger main timer and other actions
+      console.log("uhmmmm");
+      console.log(matchStarted);
       startMatch(); // Set matchStarted to true here
       onComplete();
+      console.log(matchStarted);
+      console.log("yeppp");
     }
   }, 1000);
 }

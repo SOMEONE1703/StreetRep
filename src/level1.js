@@ -236,7 +236,7 @@ function checkGoal(carPosition, goalBox) {
   ) {
     // Trigger end of game
     console.log("Goal reached! Race is over.");
-    window.location.href = "../houndsHtml/letter5.html";
+    window.location.href = "./public/houndsHtml/letter5.html";
     // Add more actions here, like displaying an end screen or stopping the car
   }
 }

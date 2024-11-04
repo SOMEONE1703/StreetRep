@@ -300,7 +300,7 @@ function checkGoal(carPosition, goalBox) {
   ) {
     // Trigger end of game
     console.log("Goal reached! Race is over.");
-    window.location.href = "../houndsHtml/letter1b.html";
+    window.location.href = "./public/houndsHtml/letter1b.html";
     // Add more actions here, like displaying an end screen or stopping the car
   }
 }
@@ -348,7 +348,7 @@ const tick = () => {
   );
 
   if (car.car.chassisBody.position.y <= 20) {
-    window.location.href = "../houndsHtml/lose1.html";
+    window.location.href = "./public/houndsHtml/lose1.html";
   }
 
   const carQuaternion = new THREE.Quaternion(

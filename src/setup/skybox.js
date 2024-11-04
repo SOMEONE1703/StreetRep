@@ -3,12 +3,12 @@ import * as THREE from "../showroom/three.module.min.js";
 export function loadCubeTextures() {
   const cubeTextureLoader = new THREE.CubeTextureLoader();
   return cubeTextureLoader.load([
-    "/textures/environmentMaps/px.png",
-    "/textures/environmentMaps/nx.png",
-    "/textures/environmentMaps/py.png",
-    "/textures/environmentMaps/ny.png",
-    "/textures/environmentMaps/pz.png",
-    "/textures/environmentMaps/nz.png",
+    "./public/textures/environmentMaps/px.png",
+    "./public/textures/environmentMaps/nx.png",
+    "./public/textures/environmentMaps/py.png",
+    "./public/textures/environmentMaps/ny.png",
+    "./public/textures/environmentMaps/pz.png",
+    "./public/textures/environmentMaps/nz.png",
   ]);
 }
 
@@ -17,22 +17,22 @@ export function loadSkybox(scene) {
   console.log("here");
   let materialArray = [];
   let texture_ft = new THREE.TextureLoader().load(
-    "/skyboxes/sky/yonder_ft.jpg"
+    "./public/skyboxes/sky/yonder_ft.jpg"
   );
   let texture_bk = new THREE.TextureLoader().load(
-    "/skyboxes/sky/yonder_bk.jpg"
+    "./public/skyboxes/sky/yonder_bk.jpg"
   );
   let texture_up = new THREE.TextureLoader().load(
-    "/skyboxes/sky/yonder_up.jpg"
+    "./public/skyboxes/sky/yonder_up.jpg"
   );
   let texture_dn = new THREE.TextureLoader().load(
-    "/skyboxes/sky/yonder_dn.jpg"
+    "./public/skyboxes/sky/yonder_dn.jpg"
   );
   let texture_rt = new THREE.TextureLoader().load(
-    "/skyboxes/sky/yonder_rt.jpg"
+    "./public/skyboxes/sky/yonder_rt.jpg"
   );
   let texture_lf = new THREE.TextureLoader().load(
-    "/skyboxes/sky/yonder_lf.jpg"
+    "./public/skyboxes/sky/yonder_lf.jpg"
   );
 
   materialArray.push(new THREE.MeshBasicMaterial({ map: texture_ft }));

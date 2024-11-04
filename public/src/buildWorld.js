@@ -11,7 +11,7 @@ export function setupFloor(scene, world) {
 
   const textureLoader = new THREE.TextureLoader();
   const texture = textureLoader.load(
-    "/textures/asphalt/asphalt_02_diff_4k.jpg"
+    "./public/textures/asphalt/asphalt_02_diff_4k.jpg"
   );
   // Set the texture's repeat properties
   texture.wrapS = THREE.RepeatWrapping;

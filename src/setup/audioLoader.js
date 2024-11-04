@@ -33,8 +33,8 @@ export function pauseAudio(source) {
 
 // Preload your audio files
 export async function preloadAudio() {
-  await loadAudio("/sounds/accelerate.mp3", "accelerate");
-  await loadAudio("/sounds/engine.mp3", "engine");
-  await loadAudio("/sounds/tire-brake.mp3", "brake");
-  await loadAudio("/sounds/crash.mp3", "turn");
+  await loadAudio("./public/sounds/accelerate.mp3", "accelerate");
+  await loadAudio("./public/sounds/engine.mp3", "engine");
+  await loadAudio("./public/sounds/tire-brake.mp3", "brake");
+  await loadAudio("./public/sounds/crash.mp3", "turn");
 }

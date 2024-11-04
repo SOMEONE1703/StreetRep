@@ -6,7 +6,7 @@ import { DRACOLoader } from "./DRACOLoader.js";
 //import details from "../showroom/details.json";
 import { preloadAudio, playAudio, pauseAudio } from "../setup/audioLoader";
 
-
+console.log("here");
 var details=[
   {
       "name":"Ford Mustang Shelby GT500",
@@ -439,7 +439,8 @@ export default class Car {
         this.car.setBrake(0, 1);
         this.car.setBrake(0, 2);
         this.car.setBrake(0, 3);
-
+        console.log(keysPressed);
+        console.log(matchStarted);
         if (matchStarted) {
           if (keysPressed.includes("arrowleft")) {
             console.log("left");

@@ -374,7 +374,7 @@ const tick = () => {
   if (score == 9 && ddd < 10) {
     //you have finished the race
     console.log("done");
-    window.location.href = "../houndsHtml/letter2.html";
+    window.location.href = "./public/houndsHtml/letter2.html";
   }
   // if (camera_toggle) {
   followCamera.update(carPosition, carQuaternion);

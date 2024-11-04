@@ -218,7 +218,7 @@ function checkGoal(obstacle) {
     if (scoredObstaclesCount >= maxScore) {
       console.log("Game Over! You scored all the balls!");
       // Implement any game over logic here, like stopping the game loop
-      window.location.href = "../houndsHtml/letter4.html";
+      window.location.href = "./public/houndsHtml/letter4.html";
       // You could also add UI elements to display the game over screen
     } else {
       // Reset ball position if not all scored
