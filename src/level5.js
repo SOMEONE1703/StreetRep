@@ -1,4 +1,4 @@
-import "./style.css";
+//import "./style.css";
 import * as THREE from "./three.module.min.js";
 import { sizes, handleResize } from "./setup/sizes.js";
 import { createRenderer } from "./setup/renderer.js";
@@ -9,12 +9,12 @@ import { initPhysics } from "./setup/physics.js";
 import { setupPhysFloor, createBox, createColliderBox } from "./buildWorld.js";
 // import stats from "./setup/stats.js";
 import Car from "./cars/car.js";
-import Car2 from "./cars/car2.js";
+//import Car2 from "./cars/car2.js";
 import { FollowCamera } from "./setup/followCamera.js"; // Import FollowCamera
-import * as CANNON from "cannon-es";
+//import * as CANNON from "cannon-es";
 import { drawSpeedo } from "./gameScreenUI/speedometer.js";
 import { startCountdown, startMatch } from "./gameScreenUI/timer.js";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "./GLTFLoader.js";
 import { MiniMap } from "./setup/miniMap.js";
 
 console.log("what");
@@ -107,7 +107,7 @@ scene.environment = loadCubeTextures();
 loadSkybox(scene);
 const textureLoader = new THREE.TextureLoader();
 const texture1 = textureLoader.load(
-  "/track5/newtextures/Poliigon_GrassPatchyGround_4585_BaseColor.jpg"
+  "./public/track5/newtextures/Poliigon_GrassPatchyGround_4585_BaseColor.jpg"
 );
 
 // Floor
@@ -115,7 +115,7 @@ setupPhysFloor(world);
 let room;
 const loader = new GLTFLoader();
 loader.load(
-  "/track5/scene.gltf",
+  "./public/track5/scene.gltf",
   (gltf) => {
     room = gltf.scene;
     room.scale.set(0.5, 0.5, 0.5);

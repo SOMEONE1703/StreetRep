@@ -1,5 +1,6 @@
 import "./style.css";
-import * as THREE from "../src/showroom/three.module.min.js";
+console.log("there");
+import * as THREE from "./three.module.min.js";
 import { sizes, handleResize } from "./setup/sizes.js";
 import { createRenderer } from "./setup/renderer.js";
 import { createControls } from "./setup/cameraControls.js";
@@ -9,7 +10,8 @@ import { initPhysics } from "./setup/physics.js";
 import { setupFloor, createBox, createGoalBox } from "./buildWorld.js";
 //import stats from "./setup/stats.js";
 import Car from "./cars/car.js";
-import Car2 from "./cars/car2.js";
+//import Car2 from "./cars/car2.js";
+console.log("here");
 import { FollowCamera } from "./setup/followCamera.js"; // Import FollowCamera
 //import * as CANNON from "cannon-es";
 import * as CANNON from 'https://cdn.jsdelivr.net/gh/pmndrs/cannon-es/dist/cannon-es.js';

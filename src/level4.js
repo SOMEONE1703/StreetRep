@@ -14,12 +14,12 @@ import {
 } from "./buildWorld.js";
 //import stats from "./setup/stats.js";
 import Car from "./cars/car.js";
-import Car2 from "./cars/car2.js";
+//import Car2 from "./cars/car2.js";
 import { FollowCamera } from "./setup/followCamera.js"; // Import FollowCamera
-import * as CANNON from "cannon-es";
+//import * as CANNON from "cannon-es";
 import { drawSpeedo } from "./gameScreenUI/speedometer.js";
 import { startCountdown, startMatch } from "./gameScreenUI/timer.js";
-import { GLTFLoader } from "three/examples/jsm/Addons.js";
+import { GLTFLoader } from "./jsm/Addons.js";
 import { MiniMap } from "./setup/miniMap.js";
 
 // Canvas and Scene
